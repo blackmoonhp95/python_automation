@@ -18,5 +18,11 @@ def hello_world():
                 return jsonify(code=403, message='Invalid Request')
 
 
+@app.route('/', methods=['GET'])
+def index():
+    if request.method == 'GET':
+        return 'Deployed successfully'
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
