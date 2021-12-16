@@ -21,7 +21,7 @@ def hello_world():
 @app.route('/', methods=['GET'])
 def index():
     if request.method == 'GET':
-        return 'Deployed successfully'
+        return 'Tuan Anh'
 
 
 if __name__ == '__main__':
